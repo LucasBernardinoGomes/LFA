@@ -12,8 +12,7 @@ public class MainApplication {
 		do {
 			
 			System.out.println("Insira o valor da moeda: ");
-			String moeda  = valInput. nextLine();
-
+			String moeda = valInput.nextLine();
 			double valorMoeda = Double.parseDouble(moeda);
 			
 			if ( valorMoeda == 0.25  ||  valorMoeda == 0.10 ){
