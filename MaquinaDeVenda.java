@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 public class MainApplication {
 
 	public static void main(String[] args) {
@@ -14,22 +15,22 @@ public class MainApplication {
 			
 			System.out.println("Insira o valor da moeda: ");
 			String moeda  = valInput. nextLine();
+
 			double valorMoeda = Double.parseDouble(moeda);
 			
 			if ( valorMoeda == 0.25  ||  valorMoeda == 0.10 ){
 					valorInicial+=valorMoeda;
 					
 					if (valorInicial >= valorTotal) {
-						System.out.println("Aqui esta sua coca!");						
+							System.out.println("Aqui esta sua coca!");					
 					}
 			}
 			
 			else {
 				System.out.println("Erro! Tipo de moeda não aceito.");
-			}		
+			}
+					
 				
-		}while(true);
-			
+		}while(valorInicial < valorTotal);		
 	}
-
 }
